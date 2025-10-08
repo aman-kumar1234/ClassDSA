@@ -1,23 +1,23 @@
-import java.util.ArrayList;
 
-public class FindDivisors {
+public class Divisors {
     public static void main(String[] args) {
-        int n = 36;  // Example number
-        ArrayList<Integer> divisors = new ArrayList<>();
+        int n = 36;
 
-        // Loop from 1 to sqrt(n) for efficiency
-        for (int i = 1; i * i <= n; i++) {
+        System.out.print("Divisors of " + n + " are: ");
+
+        // Step 1: print divisors from 1 to sqrt(n)
+        int sqrt = (int) Math.sqrt(n);
+        for (int i = 1; i <= sqrt; i++) {
             if (n % i == 0) {
-                divisors.add(i); // i is a divisor
-                if (i != n / i) { // Avoid adding square root twice
-                    divisors.add(n / i);
-                }
+                System.out.print(i + " ");
             }
         }
 
-        // Optional: sort the divisors
-        divisors.sort(null);
-
-        System.out.println("Divisors of " + n + " are: " + divisors);
+        // Step 2: print the paired divisors in reverse order (to keep ascending order)
+        for (int i = sqrt; i >= 1; i--) {
+            if (n % i == 0 && i != n / i) {
+                System.out.print(n / i + " ");
+            }
+        }
     }
 }
