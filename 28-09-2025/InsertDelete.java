@@ -2,7 +2,7 @@
 
 import java.util.*;
 
-class Main {
+class InsertDelete{
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int[] arr = new int[20];
@@ -27,4 +27,5 @@ class Main {
         for (int i = 0; i < n; i++) System.out.print(arr[i] + " ");
     }
 }
+
 
