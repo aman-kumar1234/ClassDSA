@@ -1,7 +1,7 @@
 // Q7. Write a program to solve the Tower of Hanoi problem using recursion.
 
 
-class Q7 {
+class towerofhanoi {
     static void hanoi(int n, char from, char to, char aux) {
         if (n == 1) {
             System.out.println(from + " -> " + to);
@@ -16,3 +16,4 @@ class Q7 {
         hanoi(3, 'A', 'C', 'B');
     }
 }
+
