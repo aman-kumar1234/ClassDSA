@@ -2,7 +2,7 @@
 
 import java.util.*;
 
-class Q1 {
+class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int[] arr = new int[20];
@@ -27,3 +27,4 @@ class Q1 {
         for (int i = 0; i < n; i++) System.out.print(arr[i] + " ");
     }
 }
+
