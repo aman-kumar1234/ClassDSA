@@ -1,6 +1,6 @@
 // Q10. Write a program to convert a binary number to a decimal number and vice versa.
 
-class Main {
+class BinarytoDecimal {
     public static void main(String[] args) {
         String bin = "1011";
         int dec = Integer.parseInt(bin, 2);
@@ -10,4 +10,5 @@ class Main {
         System.out.println("Decimal " + x + " = Binary " + Integer.toBinaryString(x));
     }
 }
+
 
