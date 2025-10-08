@@ -1,7 +1,7 @@
 // Q6. Write a program to print the Fibonacci series using recursion and iteration.
 
 
-class Q6 {
+class fibonacci{
     static int fib(int n) {
         if (n <= 1) return n;
         return fib(n - 1) + fib(n - 2);
@@ -22,3 +22,4 @@ class Q6 {
         for (int i = 0; i < n; i++) System.out.print(fib(i) + " ");
     }
 }
+
