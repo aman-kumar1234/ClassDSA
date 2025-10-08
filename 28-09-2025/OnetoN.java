@@ -1,7 +1,7 @@
 // Q8. Write a program to print 1 to n using recursion.
 
 
-class Q8 {
+class OnetoN {
     static void print(int n) {
         if (n == 0) return;
         print(n - 1);
@@ -12,3 +12,4 @@ class Q8 {
         print(10);
     }
 }
+
