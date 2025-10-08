@@ -1,6 +1,6 @@
 // Q5. Write a program to find the factorial of a number using recursion and iteration.
 
-class Q5 {
+class factorial {
     static int factRec(int n) {
         if (n == 0) return 1;
         return n * factRec(n - 1);
@@ -15,3 +15,4 @@ class Q5 {
         System.out.println("Recursive = " + factRec(n));
     }
 }
+
