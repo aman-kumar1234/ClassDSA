@@ -1,6 +1,6 @@
 // Q3. Write a program to add and multiply two dimensional arrays.
 
-class Q3 {
+class Main {
     public static void main(String[] args) {
         int[][] a = {{1, 2}, {3, 4}};
         int[][] b = {{5, 6}, {7, 8}};
@@ -27,3 +27,4 @@ class Q3 {
         }
     }
 }
+
